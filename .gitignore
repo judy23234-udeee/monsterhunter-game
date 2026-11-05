@@ -1,0 +1,35 @@
+# 비밀값 (CLAUDE.md 6장: 키는 .env에서만, 공유는 값 없는 .env.example)
+.env
+.env.*
+!.env.example
+
+# 백업 (CLAUDE.md 3장: _backup/<경로>.<날짜>.bak)
+_backup/
+*.bak
+
+# 빌드 결과물 (tools/build-dist.ps1로 다시 만든다)
+dist/
+
+# 점검 스크린샷 (?villageaudit=1 · 메뉴 점검이 다시 만든다). 점검 문서(.md)는 올린다
+reports/**/*.png
+reports/**/*.jpg
+
+# 압축 · 큰 원본
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# 개인 설정 · 도구 캐시
+.claude/settings.local.json
+__pycache__/
+*.pyc
+*.log
+
+# OS · 편집기
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
